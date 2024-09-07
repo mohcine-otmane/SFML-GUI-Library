@@ -1,0 +1,21 @@
+# ninja log v6
+3	75	7473915527769904	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	a2adacc8d3c77bcf
+616	746	7473933700209781	C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate-complete	8700a2005d23d2da
+303	413	7473933696857462	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	5b9001b3e1ea1ba9
+3	75	7473915527769904	C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	a2adacc8d3c77bcf
+160	235	7473933695185397	C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	374ad90ee91e4b01
+235	302	7473933695850536	C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	3baba115f163c134
+12	87	7473933693697049	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	e26cae42799885fd
+87	160	7473933694341564	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	2c73be25739c2288
+12	87	7473933693697049	C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	e26cae42799885fd
+616	746	7473933700209781	CMakeFiles/sfml-populate-complete	8700a2005d23d2da
+87	160	7473933694341564	C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	2c73be25739c2288
+160	235	7473933695185397	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	374ad90ee91e4b01
+235	302	7473933695850536	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	3baba115f163c134
+303	413	7473933696857462	C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	5b9001b3e1ea1ba9
+413	507	7473933697853319	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	b3aa7c49f2db2e96
+413	507	7473933697853319	C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	b3aa7c49f2db2e96
+507	616	7473933698872025	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	893cecf256f04ee0
+507	616	7473933698872025	C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	893cecf256f04ee0
+616	746	7473933700209781	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	8700a2005d23d2da
+616	746	7473933700209781	C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	8700a2005d23d2da
