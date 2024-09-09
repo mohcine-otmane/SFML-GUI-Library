@@ -4,18 +4,23 @@
 
 
 
-class Tools {
+class Text {
     public:
-        void getFont(std::string fontPath) {
-            sf::Font font;
-            if(!font.loadFromFile(fontPath)){
+        Text(std::string fontPath) {
+            if(font.loadFromFile(fontPath)){
+                this->text.setFont(this->font);
+            } else {
                 std::cout<<"Font not loaded"<<std::endl;
             }
         }
-        void drawText() {
-            sf::Text text;
+        void drawText(sf::RenderWindow* window,std::string txt) {
+            this->text.setString(txt);
+            window->draw(this->text);
         }
-
+    private:
+        sf::Text text;
+        sf::Font font;
+        
 };
 
 
@@ -70,6 +75,10 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(300,300),"Window");
     
 
+    Text txt("fonts\\ARIAL.TTF");
+
+
+
     Button btn(100.f,50.f, "Click");
 
     while (window.isOpen()) {
@@ -82,6 +91,7 @@ int main() {
 
         window.clear(sf::Color(255,255, 255));
         btn.draw(&window);
+        txt.drawText(&window,"Click");
         window.display();
     }
 
