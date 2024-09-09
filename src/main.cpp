@@ -38,8 +38,6 @@ class Button {
             buttonShape.setSize(sf::Vector2f(this->width, this->height));
             buttonShape.setPosition(position);
         }
-
-
          void hover(sf::RenderWindow* window, sf::Color hoverbgColor, sf::Color hoverColor) {
             sf::Vector2i mousePos = sf::Mouse::getPosition(*window);
             if(mousePos.x<width+position.x && mousePos.x>position.x && mousePos.y<height+position.y && mousePos.y>position.y) {
@@ -48,16 +46,23 @@ class Button {
                 buttonShape.setFillColor(bgColor);
             }
         }
-
         void draw(sf::RenderWindow* window) {
             hover(window, sf::Color(255, 0,0), sf::Color(0, 255,0));
             window->draw(this->buttonShape);
             window->draw(this->buttonLabel.text);
         }
 
+        // Extra settings
+
+        void setPadding(float paddingX, float paddingY) {
+            this->padding = sf::Vector2f(paddingX,paddingY);
+            buttonShape.setSize(sf::Vector2f(this->width + this->padding.x, this->height + this->padding.y));
+        }
+
     private:
         float width;
         float height;
+        sf::Vector2f padding = sf::Vector2f(0,0);
         std::string label;
         bool state;
         sf::Vector2f position;
@@ -76,6 +81,7 @@ int main() {
 
 
     Button btn("Click", sf::Vector2f(100,0));
+    btn.setPadding(100,100);
 
     while (window.isOpen()) {
         sf::Event event;
