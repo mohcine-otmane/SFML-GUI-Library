@@ -3,41 +3,40 @@
 
 
 
+sf::Font font;
 
-class Text {
-    public:
-        Text(std::string fontPath) {
+
+struct Text {
+        void init(std::string fontPath, sf::Vector2f textPosition) {
             if(font.loadFromFile(fontPath)){
                 this->text.setFont(this->font);
             } else {
                 std::cout<<"Font not loaded"<<std::endl;
             }
+            text.setPosition(textPosition);
         }
-        void drawText(sf::RenderWindow* window,std::string txt) {
+        void setText(std::string txt) {
             this->text.setString(txt);
-            window->draw(this->text);
         }
-    private:
+
         sf::Text text;
         sf::Font font;
-        
 };
-
-
-
-
-
-
 
 
 class Button {
     public:
-        Button(float width, float height, std::string label) {
-            this->width = width;
-            this->height = height;
+        Button(std::string label, sf::Vector2f position) {
             this->label = label;
-            buttonShape.setSize(sf::Vector2f(width,height));
-            buttonShape.setPosition(this->position);
+            this->position = position;
+            this->buttonLabel.init("fonts/ARIAL.TTF", sf::Vector2f(position.x, position.y));
+            this->buttonLabel.setText(label);
+
+            this->width = buttonLabel.text.getLocalBounds().width;
+            this->height = 2*buttonLabel.text.getLocalBounds().height;
+
+            buttonShape.setSize(sf::Vector2f(this->width, this->height));
+            buttonShape.setPosition(position);
         }
 
 
@@ -53,10 +52,8 @@ class Button {
         void draw(sf::RenderWindow* window) {
             hover(window, sf::Color(255, 0,0), sf::Color(0, 255,0));
             window->draw(this->buttonShape);
+            window->draw(this->buttonLabel.text);
         }
-
-       
-
 
     private:
         float width;
@@ -67,6 +64,7 @@ class Button {
         sf::Color bgColor = sf::Color(50, 50, 50);
         sf::Color color;
         sf::RectangleShape buttonShape;
+        Text buttonLabel;
 };
 
 
@@ -75,11 +73,9 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(300,300),"Window");
     
 
-    Text txt("fonts\\ARIAL.TTF");
 
 
-
-    Button btn(100.f,50.f, "Click");
+    Button btn("Click", sf::Vector2f(100,0));
 
     while (window.isOpen()) {
         sf::Event event;
@@ -91,7 +87,6 @@ int main() {
 
         window.clear(sf::Color(255,255, 255));
         btn.draw(&window);
-        txt.drawText(&window,"Click");
         window.display();
     }
 
