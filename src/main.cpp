@@ -37,6 +37,42 @@ class Button {
             this->buttonLabel.init("fonts/ARIAL.TTF", position);
             this->buttonLabel.setText(label);
 
+            
+        }
+
+        void setBorderRadius(float radius) {
+            // buttonShape.setRadius(radius);
+        }
+
+        void onHover(sf::RenderWindow* window, sf::Color hoverbgColor, sf::Color hoverColor) {
+            sf::Vector2i mousePos = sf::Mouse::getPosition(*window);
+            if(mousePos.x<this->width+this->position.x && mousePos.x>this->position.x && mousePos.y<this->height+this->position.y && mousePos.y>this->position.y) {
+                this->hovering = true;
+                buttonShape.setFillColor(hoverbgColor);
+                this->buttonLabel.text.setColor(hoverColor);
+                if (cursor.loadFromSystem(sf::Cursor::Hand))
+                    window->setMouseCursor(cursor);
+            } else {
+                this->hovering = false;
+                buttonShape.setFillColor(bgColor);
+                this->buttonLabel.text.setColor(color);
+                if (cursor.loadFromSystem(sf::Cursor::Arrow))
+                    window->setMouseCursor(cursor);
+            }
+        }
+
+        bool click(sf::Event* event) {
+            if(hovering && event->type == sf::Event::MouseButtonReleased) {
+                return true;
+            } else {
+                return false;
+            }
+                
+        }
+
+
+
+        void draw(sf::RenderWindow* window, sf::Event* event) {
             this->width = buttonLabel.text.getLocalBounds().width + this->padding.x;
             this->height = 2*buttonLabel.text.getLocalBounds().height + this->padding.y;
 
@@ -49,28 +85,9 @@ class Button {
             this->buttonLabel.text.setPosition(this->position.x + buttonShape.getLocalBounds().width / 2, this->position.y + buttonShape.getLocalBounds().height / 2);
             sf::FloatRect textBounds = this->buttonLabel.text.getLocalBounds();
             this->buttonLabel.text.setOrigin(textBounds.left + textBounds.width / 2, textBounds.top + textBounds.height / 2);
-        }
 
-        void setBorderRadius(float radius) {
-            // buttonShape.setRadius(radius);
-        }
-
-        void onHover(sf::RenderWindow* window, sf::Color hoverbgColor, sf::Color hoverColor) {
-            sf::Vector2i mousePos = sf::Mouse::getPosition(*window);
-            if(mousePos.x<this->width+this->position.x && mousePos.x>this->position.x && mousePos.y<this->height+this->position.y && mousePos.y>this->position.y) {
-                buttonShape.setFillColor(hoverbgColor);
-                this->buttonLabel.text.setColor(hoverColor);
-                if (cursor.loadFromSystem(sf::Cursor::Hand))
-                    window->setMouseCursor(cursor);
-            } else {
-                buttonShape.setFillColor(bgColor);
-                this->buttonLabel.text.setColor(color);
-                if (cursor.loadFromSystem(sf::Cursor::Arrow))
-                    window->setMouseCursor(cursor);
-            }
-        }
-        void draw(sf::RenderWindow* window) {
             onHover(window, sf::Color(255, 0,0), sf::Color(0, 255,0));
+            this->clicked = click(event);
             window->draw(this->buttonShape);
             window->draw(this->buttonLabel.text);
         }
@@ -98,6 +115,8 @@ class Button {
         sf::Color hoverColor = sf::Color(0, 0, 0);
         sf::RectangleShape buttonShape;
         Text buttonLabel;
+        bool hovering = false;
+        bool clicked = false;
 };
 
 
@@ -114,14 +133,19 @@ int main() {
 
     while (window.isOpen()) {
         sf::Event event;
+        window.clear();
+        
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
                 window.close();
             }
         }
 
-        window.clear();
-        btn.draw(&window);
+        if(btn.click(&event)) {
+            std::cout<<"Clk"<<std::endl;
+        }
+        
+        btn.draw(&window, &event);
         window.display();
     }
 
