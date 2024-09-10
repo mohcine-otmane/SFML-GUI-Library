@@ -34,11 +34,11 @@ public:
     Button(const std::string& label, const sf::Vector2f& position) {
         this->label = label;
         this->position = position;
-        this->buttonLabel.init("fonts/HARNGTON.TTF", position);
+        this->buttonLabel.init("../../SF_LiB/fonts/HARNGTON.TTF", position);
         this->buttonLabel.setText(label);
 
         buttonIcon = new sf::Texture();
-        if (!buttonIcon->loadFromFile("GUI/button.png")) {
+        if (!buttonIcon->loadFromFile("../../SF_LiB/GUI/button.png")) {
             std::cout << "Button icon not loaded" << std::endl;
         }
         this->buttonShape.setTexture(buttonIcon);
