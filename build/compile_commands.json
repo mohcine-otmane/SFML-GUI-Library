@@ -1,7 +1,7 @@
 [
 {
   "directory": "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Users/Administrator/Desktop/Github/SFML-GUI-Library/SFML/include -Os -DNDEBUG -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c C:\\Users\\Administrator\\Desktop\\Github\\SFML-GUI-Library\\src\\main.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Users/Administrator/Desktop/Github/SFML-GUI-Library/SF_LiB -IC:/Users/Administrator/Desktop/Github/SFML-GUI-Library/SFML/include -Os -DNDEBUG -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c C:\\Users\\Administrator\\Desktop\\Github\\SFML-GUI-Library\\src\\main.cpp",
   "file": "C:\\Users\\Administrator\\Desktop\\Github\\SFML-GUI-Library\\src\\main.cpp",
   "output": "CMakeFiles\\main.dir\\src\\main.cpp.obj"
 },

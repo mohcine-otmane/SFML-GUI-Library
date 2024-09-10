@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: networking
+# Project: SFML_Library
 # Configurations: MinSizeRel
 # =============================================================================
 
@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_main: phony || cmake_object_order_depend
 build CMakeFiles/main.dir/src/main.cpp.obj: CXX_COMPILER__main_unscanned_MinSizeRel C$:/Users/Administrator/Desktop/Github/SFML-GUI-Library/src/main.cpp || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles\main.dir\src\main.cpp.obj.d
   FLAGS = -Os -DNDEBUG
-  INCLUDES = -IC:/Users/Administrator/Desktop/Github/SFML-GUI-Library/SFML/include
+  INCLUDES = -IC:/Users/Administrator/Desktop/Github/SFML-GUI-Library/SF_LiB -IC:/Users/Administrator/Desktop/Github/SFML-GUI-Library/SFML/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src
 

@@ -14,7 +14,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -28,13 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 22,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 24,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 33,
 				"parent" : 0
 			}
 		]
@@ -50,6 +57,10 @@
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/SF_LiB"
+				},
 				{
 					"backtrace" : 2,
 					"path" : "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/SFML/include"
@@ -70,11 +81,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-network::@d7f79968b2699e7782cb"
+			"id" : "sfml-window::@5730451e331e3690ae65"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-window::@5730451e331e3690ae65"
+			"id" : "sfml-network::@d7f79968b2699e7782cb"
 		},
 		{
 			"backtrace" : 2,

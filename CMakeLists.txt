@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(networking VERSION 0.1.0 LANGUAGES C CXX)
+project(SFML_Library VERSION 0.1.0 LANGUAGES C CXX)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
@@ -12,12 +12,8 @@ include(FetchContent)
 #     GIT_SHALLOW ON SOURCE_DIR "${CMAKE_CURRENT_LIST_DIR}/SFML/")
 # FetchContent_MakeAvailable(SFML)
 
-
 FetchContent_Declare(SFML SOURCE_DIR "${CMAKE_CURRENT_LIST_DIR}/SFML/")
 FetchContent_MakeAvailable(SFML)
-
-
-
 
 add_executable(main src/main.cpp)
 
@@ -33,7 +29,5 @@ if(WIN32)
         VERBATIM)
 endif()
 
-
-
-
-
+# Correct the target name and directory path
+target_include_directories(main PRIVATE ${CMAKE_CURRENT_LIST_DIR}/SF_LiB)

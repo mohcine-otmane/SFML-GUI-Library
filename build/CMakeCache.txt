@@ -209,7 +209,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=networking
+CMAKE_PROJECT_NAME:STATIC=SFML_Library
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0.1.0
@@ -439,6 +439,15 @@ SFML_INSTALL_PKGCONFIG_FILES:BOOL=FALSE
 
 //Value Computed by CMake
 SFML_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+SFML_Library_BINARY_DIR:STATIC=C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build
+
+//Value Computed by CMake
+SFML_Library_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+SFML_Library_SOURCE_DIR:STATIC=C:/Users/Administrator/Desktop/Github/SFML-GUI-Library
 
 //TRUE to use an OpenGL ES implementation, FALSE to use a desktop
 // OpenGL implementation
