@@ -125,47 +125,47 @@ set_target_properties(sfml-audio PROPERTIES
   INTERFACE_LINK_LIBRARIES "sfml-system"
 )
 
-# Import target "sfml-system" for configuration "Debug"
-set_property(TARGET sfml-system APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+# Import target "sfml-system" for configuration "MinSizeRel"
+set_property(TARGET sfml-system APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(sfml-system PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-build/lib/libsfml-system-d.a"
-  IMPORTED_LOCATION_DEBUG "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/bin/sfml-system-d-2.dll"
+  IMPORTED_IMPLIB_MINSIZEREL "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-build/lib/libsfml-system.a"
+  IMPORTED_LOCATION_MINSIZEREL "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/bin/sfml-system-2.dll"
   )
 
-# Import target "sfml-main" for configuration "Debug"
-set_property(TARGET sfml-main APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+# Import target "sfml-main" for configuration "MinSizeRel"
+set_property(TARGET sfml-main APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(sfml-main PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-build/lib/libsfml-main-d.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_MINSIZEREL "CXX"
+  IMPORTED_LOCATION_MINSIZEREL "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-build/lib/libsfml-main.a"
   )
 
-# Import target "sfml-window" for configuration "Debug"
-set_property(TARGET sfml-window APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+# Import target "sfml-window" for configuration "MinSizeRel"
+set_property(TARGET sfml-window APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(sfml-window PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-build/lib/libsfml-window-d.a"
-  IMPORTED_LOCATION_DEBUG "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/bin/sfml-window-d-2.dll"
+  IMPORTED_IMPLIB_MINSIZEREL "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-build/lib/libsfml-window.a"
+  IMPORTED_LOCATION_MINSIZEREL "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/bin/sfml-window-2.dll"
   )
 
-# Import target "sfml-network" for configuration "Debug"
-set_property(TARGET sfml-network APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+# Import target "sfml-network" for configuration "MinSizeRel"
+set_property(TARGET sfml-network APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(sfml-network PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-build/lib/libsfml-network-d.a"
-  IMPORTED_LOCATION_DEBUG "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/bin/sfml-network-d-2.dll"
+  IMPORTED_IMPLIB_MINSIZEREL "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-build/lib/libsfml-network.a"
+  IMPORTED_LOCATION_MINSIZEREL "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/bin/sfml-network-2.dll"
   )
 
-# Import target "sfml-graphics" for configuration "Debug"
-set_property(TARGET sfml-graphics APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+# Import target "sfml-graphics" for configuration "MinSizeRel"
+set_property(TARGET sfml-graphics APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(sfml-graphics PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-build/lib/libsfml-graphics-d.a"
-  IMPORTED_LOCATION_DEBUG "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/bin/sfml-graphics-d-2.dll"
+  IMPORTED_IMPLIB_MINSIZEREL "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-build/lib/libsfml-graphics.a"
+  IMPORTED_LOCATION_MINSIZEREL "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/bin/sfml-graphics-2.dll"
   )
 
-# Import target "sfml-audio" for configuration "Debug"
-set_property(TARGET sfml-audio APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+# Import target "sfml-audio" for configuration "MinSizeRel"
+set_property(TARGET sfml-audio APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(sfml-audio PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-build/lib/libsfml-audio-d.a"
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "OpenAL::OpenAL"
-  IMPORTED_LOCATION_DEBUG "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/bin/sfml-audio-d-2.dll"
+  IMPORTED_IMPLIB_MINSIZEREL "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/_deps/sfml-build/lib/libsfml-audio.a"
+  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "OpenAL::OpenAL"
+  IMPORTED_LOCATION_MINSIZEREL "C:/Users/Administrator/Desktop/Github/SFML-GUI-Library/build/bin/sfml-audio-2.dll"
   )
 
 # This file does not depend on other imported targets which have

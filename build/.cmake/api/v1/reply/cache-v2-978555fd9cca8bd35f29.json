@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : "MinSizeRel"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",

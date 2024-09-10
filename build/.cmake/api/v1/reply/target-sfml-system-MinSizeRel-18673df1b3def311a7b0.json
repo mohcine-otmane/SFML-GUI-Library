@@ -2,13 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/sfml-system-d-2.dll"
+			"path" : "bin/sfml-system-2.dll"
 		},
 		{
-			"path" : "_deps/sfml-build/lib/libsfml-system-d.a"
+			"path" : "_deps/sfml-build/lib/libsfml-system.a"
 		},
 		{
-			"path" : "bin/sfml-system-d.pdb"
+			"path" : "bin/sfml-system.pdb"
 		}
 	],
 	"backtrace" : 2,
@@ -77,7 +77,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-Os -DNDEBUG"
 				},
 				{
 					"fragment" : " -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches"
@@ -190,7 +190,7 @@
 		"language" : "CXX"
 	},
 	"name" : "sfml-system",
-	"nameOnDisk" : "sfml-system-d-2.dll",
+	"nameOnDisk" : "sfml-system-2.dll",
 	"paths" : 
 	{
 		"build" : "_deps/sfml-build/src/SFML/System",

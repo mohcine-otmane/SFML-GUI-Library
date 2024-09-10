@@ -2,13 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/sfml-graphics-d-2.dll"
+			"path" : "bin/sfml-graphics-2.dll"
 		},
 		{
-			"path" : "_deps/sfml-build/lib/libsfml-graphics-d.a"
+			"path" : "_deps/sfml-build/lib/libsfml-graphics.a"
 		},
 		{
-			"path" : "bin/sfml-graphics-d.pdb"
+			"path" : "bin/sfml-graphics.pdb"
 		}
 	],
 	"backtrace" : 2,
@@ -132,7 +132,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-Os -DNDEBUG"
 				},
 				{
 					"fragment" : " -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches"
@@ -212,7 +212,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-Os -DNDEBUG"
 				},
 				{
 					"fragment" : "-fno-strict-aliasing"
@@ -348,12 +348,12 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "_deps\\sfml-build\\lib\\libsfml-window-d.a",
+				"fragment" : "_deps\\sfml-build\\lib\\libsfml-window.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "_deps\\sfml-build\\lib\\libsfml-system-d.a",
+				"fragment" : "_deps\\sfml-build\\lib\\libsfml-system.a",
 				"role" : "libraries"
 			},
 			{
@@ -369,7 +369,7 @@
 		"language" : "CXX"
 	},
 	"name" : "sfml-graphics",
-	"nameOnDisk" : "sfml-graphics-d-2.dll",
+	"nameOnDisk" : "sfml-graphics-2.dll",
 	"paths" : 
 	{
 		"build" : "_deps/sfml-build/src/SFML/Graphics",

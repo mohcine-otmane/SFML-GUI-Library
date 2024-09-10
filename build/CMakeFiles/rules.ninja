@@ -7,14 +7,14 @@
 
 # =============================================================================
 # Project: networking
-# Configurations: Debug
+# Configurations: MinSizeRel
 # =============================================================================
 # =============================================================================
 
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__main_unscanned_Debug
+rule CXX_COMPILER__main_unscanned_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule CXX_COMPILER__main_unscanned_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__main_Debug
+rule CXX_EXECUTABLE_LINKER__main_MinSizeRel
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\msys64\ucrt64\bin\g++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -41,7 +41,7 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__sfml-system_unscanned_Debug
+rule CXX_COMPILER__sfml-system_unscanned_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -51,7 +51,7 @@ rule CXX_COMPILER__sfml-system_unscanned_Debug
 #############################################
 # Rule for compiling RC files.
 
-rule RC_COMPILER__sfml-system_unscanned_Debug
+rule RC_COMPILER__sfml-system_unscanned_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\windres.exe -O coff $DEFINES $INCLUDES $FLAGS $in $out
@@ -61,7 +61,7 @@ rule RC_COMPILER__sfml-system_unscanned_Debug
 #############################################
 # Rule for linking CXX shared library.
 
-rule CXX_SHARED_LIBRARY_LINKER__sfml-system_Debug
+rule CXX_SHARED_LIBRARY_LINKER__sfml-system_MinSizeRel
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\msys64\ucrt64\bin\g++.exe $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,2,--minor-image-version,6 $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
@@ -70,7 +70,7 @@ rule CXX_SHARED_LIBRARY_LINKER__sfml-system_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__sfml-main_unscanned_Debug
+rule CXX_COMPILER__sfml-main_unscanned_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -80,7 +80,7 @@ rule CXX_COMPILER__sfml-main_unscanned_Debug
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__sfml-main_Debug
+rule CXX_STATIC_LIBRARY_LINKER__sfml-main_MinSizeRel
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && C:\msys64\ucrt64\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\msys64\ucrt64\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -89,7 +89,7 @@ rule CXX_STATIC_LIBRARY_LINKER__sfml-main_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__sfml-window_unscanned_Debug
+rule CXX_COMPILER__sfml-window_unscanned_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -99,7 +99,7 @@ rule CXX_COMPILER__sfml-window_unscanned_Debug
 #############################################
 # Rule for compiling RC files.
 
-rule RC_COMPILER__sfml-window_unscanned_Debug
+rule RC_COMPILER__sfml-window_unscanned_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\windres.exe -O coff $DEFINES $INCLUDES $FLAGS $in $out
@@ -109,7 +109,7 @@ rule RC_COMPILER__sfml-window_unscanned_Debug
 #############################################
 # Rule for linking CXX shared library.
 
-rule CXX_SHARED_LIBRARY_LINKER__sfml-window_Debug
+rule CXX_SHARED_LIBRARY_LINKER__sfml-window_MinSizeRel
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\msys64\ucrt64\bin\g++.exe $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,2,--minor-image-version,6 $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
@@ -118,7 +118,7 @@ rule CXX_SHARED_LIBRARY_LINKER__sfml-window_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__sfml-network_unscanned_Debug
+rule CXX_COMPILER__sfml-network_unscanned_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -128,7 +128,7 @@ rule CXX_COMPILER__sfml-network_unscanned_Debug
 #############################################
 # Rule for compiling RC files.
 
-rule RC_COMPILER__sfml-network_unscanned_Debug
+rule RC_COMPILER__sfml-network_unscanned_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\windres.exe -O coff $DEFINES $INCLUDES $FLAGS $in $out
@@ -138,7 +138,7 @@ rule RC_COMPILER__sfml-network_unscanned_Debug
 #############################################
 # Rule for linking CXX shared library.
 
-rule CXX_SHARED_LIBRARY_LINKER__sfml-network_Debug
+rule CXX_SHARED_LIBRARY_LINKER__sfml-network_MinSizeRel
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\msys64\ucrt64\bin\g++.exe $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,2,--minor-image-version,6 $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
@@ -147,7 +147,7 @@ rule CXX_SHARED_LIBRARY_LINKER__sfml-network_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__sfml-graphics_unscanned_Debug
+rule CXX_COMPILER__sfml-graphics_unscanned_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -157,7 +157,7 @@ rule CXX_COMPILER__sfml-graphics_unscanned_Debug
 #############################################
 # Rule for compiling RC files.
 
-rule RC_COMPILER__sfml-graphics_unscanned_Debug
+rule RC_COMPILER__sfml-graphics_unscanned_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\windres.exe -O coff $DEFINES $INCLUDES $FLAGS $in $out
@@ -167,7 +167,7 @@ rule RC_COMPILER__sfml-graphics_unscanned_Debug
 #############################################
 # Rule for linking CXX shared library.
 
-rule CXX_SHARED_LIBRARY_LINKER__sfml-graphics_Debug
+rule CXX_SHARED_LIBRARY_LINKER__sfml-graphics_MinSizeRel
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\msys64\ucrt64\bin\g++.exe $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,2,--minor-image-version,6 $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
@@ -176,7 +176,7 @@ rule CXX_SHARED_LIBRARY_LINKER__sfml-graphics_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__sfml-audio_unscanned_Debug
+rule CXX_COMPILER__sfml-audio_unscanned_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -186,7 +186,7 @@ rule CXX_COMPILER__sfml-audio_unscanned_Debug
 #############################################
 # Rule for compiling RC files.
 
-rule RC_COMPILER__sfml-audio_unscanned_Debug
+rule RC_COMPILER__sfml-audio_unscanned_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\windres.exe -O coff $DEFINES $INCLUDES $FLAGS $in $out
@@ -196,7 +196,7 @@ rule RC_COMPILER__sfml-audio_unscanned_Debug
 #############################################
 # Rule for linking CXX shared library.
 
-rule CXX_SHARED_LIBRARY_LINKER__sfml-audio_Debug
+rule CXX_SHARED_LIBRARY_LINKER__sfml-audio_MinSizeRel
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\msys64\ucrt64\bin\g++.exe $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,2,--minor-image-version,6 $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT

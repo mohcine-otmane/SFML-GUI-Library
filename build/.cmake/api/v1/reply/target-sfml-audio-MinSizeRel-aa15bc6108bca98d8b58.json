@@ -2,13 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/sfml-audio-d-2.dll"
+			"path" : "bin/sfml-audio-2.dll"
 		},
 		{
-			"path" : "_deps/sfml-build/lib/libsfml-audio-d.a"
+			"path" : "_deps/sfml-build/lib/libsfml-audio.a"
 		},
 		{
-			"path" : "bin/sfml-audio-d.pdb"
+			"path" : "bin/sfml-audio.pdb"
 		}
 	],
 	"backtrace" : 2,
@@ -145,7 +145,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-Os -DNDEBUG"
 				},
 				{
 					"fragment" : " -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches"
@@ -310,7 +310,7 @@
 			},
 			{
 				"backtrace" : 5,
-				"fragment" : "_deps\\sfml-build\\lib\\libsfml-system-d.a",
+				"fragment" : "_deps\\sfml-build\\lib\\libsfml-system.a",
 				"role" : "libraries"
 			},
 			{
@@ -346,7 +346,7 @@
 		"language" : "CXX"
 	},
 	"name" : "sfml-audio",
-	"nameOnDisk" : "sfml-audio-d-2.dll",
+	"nameOnDisk" : "sfml-audio-2.dll",
 	"paths" : 
 	{
 		"build" : "_deps/sfml-build/src/SFML/Audio",

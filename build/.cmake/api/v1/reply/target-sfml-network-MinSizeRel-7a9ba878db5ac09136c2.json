@@ -2,13 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/sfml-network-d-2.dll"
+			"path" : "bin/sfml-network-2.dll"
 		},
 		{
-			"path" : "_deps/sfml-build/lib/libsfml-network-d.a"
+			"path" : "_deps/sfml-build/lib/libsfml-network.a"
 		},
 		{
-			"path" : "bin/sfml-network-d.pdb"
+			"path" : "bin/sfml-network.pdb"
 		}
 	],
 	"backtrace" : 2,
@@ -83,7 +83,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-Os -DNDEBUG"
 				},
 				{
 					"fragment" : " -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches"
@@ -186,7 +186,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "_deps\\sfml-build\\lib\\libsfml-system-d.a",
+				"fragment" : "_deps\\sfml-build\\lib\\libsfml-system.a",
 				"role" : "libraries"
 			},
 			{
@@ -202,7 +202,7 @@
 		"language" : "CXX"
 	},
 	"name" : "sfml-network",
-	"nameOnDisk" : "sfml-network-d-2.dll",
+	"nameOnDisk" : "sfml-network-2.dll",
 	"paths" : 
 	{
 		"build" : "_deps/sfml-build/src/SFML/Network",

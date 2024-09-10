@@ -45,7 +45,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-Os -DNDEBUG"
 				}
 			],
 			"includes" : 
@@ -70,15 +70,15 @@
 		},
 		{
 			"backtrace" : 2,
+			"id" : "sfml-network::@d7f79968b2699e7782cb"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "sfml-window::@5730451e331e3690ae65"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "sfml-graphics::@98af38147d5fa7e70f61"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "sfml-network::@d7f79968b2699e7782cb"
 		}
 	],
 	"id" : "main::@6890427a1f51a3e7e1df",
@@ -87,7 +87,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-Os -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -96,22 +96,22 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "_deps\\sfml-build\\lib\\libsfml-network-d.a",
+				"fragment" : "_deps\\sfml-build\\lib\\libsfml-network.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "_deps\\sfml-build\\lib\\libsfml-graphics-d.a",
+				"fragment" : "_deps\\sfml-build\\lib\\libsfml-graphics.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "_deps\\sfml-build\\lib\\libsfml-window-d.a",
+				"fragment" : "_deps\\sfml-build\\lib\\libsfml-window.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "_deps\\sfml-build\\lib\\libsfml-system-d.a",
+				"fragment" : "_deps\\sfml-build\\lib\\libsfml-system.a",
 				"role" : "libraries"
 			},
 			{

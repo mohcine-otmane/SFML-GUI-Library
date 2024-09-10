@@ -9,7 +9,7 @@
 		"files" : 
 		[
 			"SFML/cmake/Macros.cmake",
-			"SFML/src/SFML/System/CMakeLists.txt"
+			"SFML/src/SFML/Window/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -19,7 +19,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 89,
+				"line" : 284,
 				"parent" : 0
 			},
 			{
@@ -38,10 +38,10 @@
 			"destination" : "lib",
 			"paths" : 
 			[
-				"_deps/sfml-build/lib/libsfml-system-d.a"
+				"_deps/sfml-build/lib/libsfml-window.a"
 			],
-			"targetId" : "sfml-system::@8cb1db2982443611e568",
-			"targetIndex" : 5,
+			"targetId" : "sfml-window::@5730451e331e3690ae65",
+			"targetIndex" : 6,
 			"targetIsImportLibrary" : true,
 			"type" : "target"
 		},
@@ -51,16 +51,16 @@
 			"destination" : "bin",
 			"paths" : 
 			[
-				"bin/sfml-system-d-2.dll"
+				"bin/sfml-window-2.dll"
 			],
-			"targetId" : "sfml-system::@8cb1db2982443611e568",
-			"targetIndex" : 5,
+			"targetId" : "sfml-window::@5730451e331e3690ae65",
+			"targetIndex" : 6,
 			"type" : "target"
 		}
 	],
 	"paths" : 
 	{
-		"build" : "_deps/sfml-build/src/SFML/System",
-		"source" : "SFML/src/SFML/System"
+		"build" : "_deps/sfml-build/src/SFML/Window",
+		"source" : "SFML/src/SFML/Window"
 	}
 }

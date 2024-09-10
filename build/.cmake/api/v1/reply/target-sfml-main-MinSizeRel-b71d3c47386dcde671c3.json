@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "_deps/sfml-build/lib/libsfml-main-d.a"
+			"path" : "_deps/sfml-build/lib/libsfml-main.a"
 		}
 	],
 	"backtrace" : 2,
@@ -58,7 +58,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-Os -DNDEBUG"
 				},
 				{
 					"fragment" : " -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches"
@@ -102,7 +102,7 @@
 		}
 	},
 	"name" : "sfml-main",
-	"nameOnDisk" : "libsfml-main-d.a",
+	"nameOnDisk" : "libsfml-main.a",
 	"paths" : 
 	{
 		"build" : "_deps/sfml-build/src/SFML/Main",

@@ -9,7 +9,7 @@
 		"files" : 
 		[
 			"SFML/cmake/Macros.cmake",
-			"SFML/src/SFML/Window/CMakeLists.txt"
+			"SFML/src/SFML/Graphics/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -19,7 +19,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 284,
+				"line" : 89,
 				"parent" : 0
 			},
 			{
@@ -38,10 +38,10 @@
 			"destination" : "lib",
 			"paths" : 
 			[
-				"_deps/sfml-build/lib/libsfml-window-d.a"
+				"_deps/sfml-build/lib/libsfml-graphics.a"
 			],
-			"targetId" : "sfml-window::@5730451e331e3690ae65",
-			"targetIndex" : 6,
+			"targetId" : "sfml-graphics::@98af38147d5fa7e70f61",
+			"targetIndex" : 2,
 			"targetIsImportLibrary" : true,
 			"type" : "target"
 		},
@@ -51,16 +51,16 @@
 			"destination" : "bin",
 			"paths" : 
 			[
-				"bin/sfml-window-d-2.dll"
+				"bin/sfml-graphics-2.dll"
 			],
-			"targetId" : "sfml-window::@5730451e331e3690ae65",
-			"targetIndex" : 6,
+			"targetId" : "sfml-graphics::@98af38147d5fa7e70f61",
+			"targetIndex" : 2,
 			"type" : "target"
 		}
 	],
 	"paths" : 
 	{
-		"build" : "_deps/sfml-build/src/SFML/Window",
-		"source" : "SFML/src/SFML/Window"
+		"build" : "_deps/sfml-build/src/SFML/Graphics",
+		"source" : "SFML/src/SFML/Graphics"
 	}
 }

@@ -25,7 +25,7 @@ CMAKE_ADDR2LINE:FILEPATH=C:/msys64/ucrt64/bin/addr2line.exe
 CMAKE_AR:FILEPATH=C:/msys64/ucrt64/bin/ar.exe
 
 //Choose the type of build (Debug or Release)
-CMAKE_BUILD_TYPE:STRING=Debug
+CMAKE_BUILD_TYPE:STRING=MinSizeRel
 
 //No help, variable specified on the command line.
 CMAKE_CXX_COMPILER:FILEPATH=C:/msys64/ucrt64/bin/g++.exe

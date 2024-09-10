@@ -38,7 +38,7 @@
 			"destination" : "lib",
 			"paths" : 
 			[
-				"_deps/sfml-build/lib/libsfml-main-d.a"
+				"_deps/sfml-build/lib/libsfml-main.a"
 			],
 			"targetId" : "sfml-main::@81ec5539f1398dd625f6",
 			"targetIndex" : 3,
