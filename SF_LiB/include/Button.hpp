@@ -47,7 +47,7 @@ public:
     }
 
     void setBorderRadius(float radius) {
-        // Currently not implemented
+        // For rounded buttons
     }
 
     void onHover(sf::RenderWindow* window, const sf::Color& hoverbgColor, const sf::Color& hoverColor) {
@@ -109,6 +109,7 @@ public:
 private:
     float width = 100;
     float height = 50;
+    float borderradius[4] = {0, 0, 0, 0};
     sf::Vector2f padding = defaultPadding;
     std::string label;
     sf::Vector2f position;

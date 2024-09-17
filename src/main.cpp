@@ -3,7 +3,6 @@
 #include "include/Button.hpp"
 #include "include/textarea.hpp"
 
-// Initialize global variables
 sf::Font defaultFont;
 sf::Vector2f defaultPadding = sf::Vector2f(0, 0);
 sf::Cursor cursor;
@@ -19,9 +18,10 @@ int main() {
     btn.setPadding(20, 20);
     btn.setBorderRadius(30);
 
-    textArea textarea(&window,200,200,sf::Vector2f(0,0));
+    textArea textarea(&window,300,200,sf::Vector2f(0,0));
+    textarea.setContent("Text must wrap");
 
-    std::cout<<textarea.getContent()<<std::endl;
+    // std::cout<<textarea.getContent()<<std::endl;
 
 
     while (window.isOpen()) {
@@ -33,7 +33,6 @@ int main() {
 
             if (event.type == sf::Event::Resized)
             {
-                // update the view to the new size of the window
                 sf::FloatRect visibleArea(0, 0, event.size.width, event.size.height);
                 window.setView(sf::View(visibleArea));
             }
@@ -45,7 +44,8 @@ int main() {
             std::cout << "Clk" << std::endl;
         }
 
-        btn.draw(&window, event);
+        textarea.draw(&window,event);
+        // btn.draw(&window, event);
         window.display();
     }
 
